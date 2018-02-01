@@ -1,5 +1,8 @@
 ## create a data frame from data/installed-packages.csv
 ## with, e.g., readr::read_csv() or read.csv()
+library(tidyverse)
+library(here)
+
 pack.df <- read.csv(here("data", "installed-packages.csv"))
 
 ## filter out packages in the default library
